@@ -31,7 +31,7 @@ public class Sintyou {
             System.out.print((i + 1) + "人目の身長: ");
             String str = scanner.nextLine();
 
-            if (str.matches("\\d+")) {
+            if (str.matches("\\d+(\\.\\d+)?")) {
                 double num = Double.parseDouble(str);
                 if (num >= 40 && num <= 210) {
                     numbers[i] = num;
